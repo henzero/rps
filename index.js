@@ -22,12 +22,12 @@ function playRound(player, computer) {
 		console.log(`${player} vs ${computer}\n${choices[0]} beats ${choices[2]}\n--You win!--`);
 		point++;
 	} else if (player == choices[2] && computer == choices[1]) {
-		console.log(`${player} vs ${computer}\n${choices[2]} beats ${choices[1]}\n--You win!--`);
+		console.log(`${player} vs ${computer}\n${choices[2]} beat ${choices[1]}\n--You win!--`);
 		point++;
 	} else if (player == choices[0] && computer == choices[1]) {
 		console.log(`${player} vs ${computer}\n${choices[1]} beats ${choices[0]}\n--You lose!--`);
 	} else if (player == choices[1] && computer == choices[2]) {
-		console.log(`${player} vs ${computer}\n${choices[2]} beats ${choices[1]}\n--You lose!--`);
+		console.log(`${player} vs ${computer}\n${choices[2]} beat ${choices[1]}\n--You lose!--`);
 	} else if (player == choices[2] && computer == choices[0]) {
 		console.log(`${player} vs ${computer}\n${choices[0]} beats ${choices[2]}\n--You lose!--`);
 	} else {
