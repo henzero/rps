@@ -12,28 +12,28 @@ function getPlayerChoice() {
 	return player.charAt(0).toUpperCase() + player.slice(1).toLowerCase();
 }
 
-function playRound(player, computer) {
+function playRound(playerChoice, computerChoice) {
 	let point = 0;
 
-	if (player == choices[1] && computer == choices[0]) {
-		console.log(`${player} vs ${computer}\n${choices[1]} beats ${choices[0]}\n--You win!--`);
+	if (playerChoice == choices[1] && computerChoice == choices[0]) {
+		console.log(`${playerChoice} vs ${computerChoice}\n${choices[1]} beats ${choices[0]}\n--You win!--`);
 		point++;
-	} else if (player == choices[0] && computer == choices[2]) {
-		console.log(`${player} vs ${computer}\n${choices[0]} beats ${choices[2]}\n--You win!--`);
+	} else if (playerChoice == choices[0] && computerChoice == choices[2]) {
+		console.log(`${playerChoice} vs ${computerChoice}\n${choices[0]} beats ${choices[2]}\n--You win!--`);
 		point++;
-	} else if (player == choices[2] && computer == choices[1]) {
-		console.log(`${player} vs ${computer}\n${choices[2]} beat ${choices[1]}\n--You win!--`);
+	} else if (playerChoice == choices[2] && computerChoice == choices[1]) {
+		console.log(`${playerChoice} vs ${computerChoice}\n${choices[2]} beat ${choices[1]}\n--You win!--`);
 		point++;
-	} else if (player == choices[0] && computer == choices[1]) {
-		console.log(`${player} vs ${computer}\n${choices[1]} beats ${choices[0]}\n--You lose!--`);
-	} else if (player == choices[1] && computer == choices[2]) {
-		console.log(`${player} vs ${computer}\n${choices[2]} beat ${choices[1]}\n--You lose!--`);
-	} else if (player == choices[2] && computer == choices[0]) {
-		console.log(`${player} vs ${computer}\n${choices[0]} beats ${choices[2]}\n--You lose!--`);
+	} else if (playerChoice == choices[0] && computerChoice == choices[1]) {
+		console.log(`${playerChoice} vs ${computerChoice}\n${choices[1]} beats ${choices[0]}\n--You lose!--`);
+	} else if (playerChoice == choices[1] && computerChoice == choices[2]) {
+		console.log(`${playerChoice} vs ${computerChoice}\n${choices[2]} beat ${choices[1]}\n--You lose!--`);
+	} else if (playerChoice == choices[2] && computerChoice == choices[0]) {
+		console.log(`${playerChoice} vs ${computerChoice}\n${choices[0]} beats ${choices[2]}\n--You lose!--`);
 	} else {
 		for (let i = 0; i < choices.length; i++) {
-			if (player == choices[i]) {
-				console.log(`${player} vs ${computer}\n--It's a tie!--`);
+			if (playerChoice == choices[i]) {
+				console.log(`${playerChoice} vs ${computerChoice}\n--It's a tie!--`);
 			}
 		}
 	}
