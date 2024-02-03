@@ -1,18 +1,18 @@
 const choices = ["Rock", "Paper", "Scissors"];
 
-const getComputerChoice = () => {
+function getComputerChoice() {
 	const random = Math.floor(Math.random() * 3);
 
 	return choices[random];
-};
+}
 
-const getPlayerChoice = () => {
+function getPlayerChoice() {
 	let player = prompt("Rock, Paper, or Scissors?");
 
 	return player.charAt(0).toUpperCase() + player.slice(1).toLowerCase();
-};
+}
 
-const playRound = (player, computer) => {
+function playRound(player, computer) {
 	let point = 0;
 
 	if (player == choices[1] && computer == choices[0]) {
@@ -39,4 +39,4 @@ const playRound = (player, computer) => {
 	}
 
 	return point;
-};
+}
